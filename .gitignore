@@ -1,0 +1,15 @@
+# Bỏ qua bộ nhớ tạm của Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Bỏ qua môi trường ảo (nếu có)
+venv/
+.venv/
+env/
+
+# Bỏ qua cài đặt của VS Code
+.vscode/
+
+# Bỏ qua file CSDL SQLite cục bộ (tùy chọn: nếu muốn giữ lại đề mẫu thì xóa dòng dưới đi)
+*.db
