@@ -24,7 +24,7 @@ class AdminChatView(ctk.CTkFrame):
         self.is_connected = False
         self.is_listening = False
         self.server_port = 8888
-        self.active_ip = "127.0.0.1"
+        self.active_ip = "192.168.1.26"
 
         self.setup_ui()
         self.connect_to_server()
@@ -57,7 +57,7 @@ class AdminChatView(ctk.CTkFrame):
     def connect_to_server(self):
         def connect_thread():
             connected = False
-            for ip in ["127.0.0.1", "10.60.14.113", "192.168.1.26"]:
+            for ip in ["192.168.1.26", "10.60.14.113", "192.168.1.26"]:
                 try:
                     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
                     s.settimeout(1.5)
